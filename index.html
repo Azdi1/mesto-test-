@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Mesto</title>
+    <link rel="stylesheet" href="./pages/index.css" />
+  </head>
+  <body class="page">
+    <div class="conteaner">
+      <div class="content__box">
+        <h2 class="content__title">Photography</h2>
+        <p class="paragraph">
+          Here is a collection of my best travel pictures that I took while
+          travelling places all around the world.
+        </p>
+      </div>
+      <ul class="list">
+        <li class="item">
+          <button type="button" class="btn active__btn theme-menu__button">
+            ITALY
+          </button>
+        </li>
+        <li class="item">
+          <button type="button" class="btn">AUSTRALIA</button>
+        </li>
+        <li class="item"><button type="button" class="btn">INDIA</button></li>
+        <li class="item"><button type="button" class="btn">BRAZIL</button></li>
+      </ul>
+      <div class="cards">
+        <ul class="items">
+          <li class="item">
+            <article class="card">
+              <img
+                id="ITALY"
+                class="img__card"
+                src="./images/card_1.jpg"
+                alt=""
+              />
+            </article>
+          </li>
+          <li class="item">
+            <article class="card">
+              <img class="img__card" src="./images/card_2.jpg" alt="" />
+            </article>
+          </li>
+          <!-- <li class="item">
+            <article class="card">
+              <img class="img__card" src="./images/card_3.jpg" alt="" />
+            </article>
+          </li> -->
+          <li class="item">
+            <article class="card">
+              <img class="img__card" src="./images/card_4.jpg" alt="" />
+            </article>
+          </li>
+          <li class="item">
+            <article class="card">
+              <img class="img__card" src="./images/card_5.jpg" alt="" />
+            </article>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./scripts/index.js" defer></script>
+  </body>
+</html>
