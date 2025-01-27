@@ -1,4 +1,6 @@
 @import url('../vendor/normalize.css');
 @import url('../vendor/fonts.css');
-@import url('../block/index.css');
+@import url('../pages/burger.css');
+@import url('../block/style.css');
+@import url('../vendor/veriables.css');
 @import url("../scripts/index.js");

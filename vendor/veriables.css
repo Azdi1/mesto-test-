@@ -1,0 +1,19 @@
+:root {
+	--background-dark: #121212;
+	--background-light: #eeeef0;
+	--glass: rgba(88, 90, 96, 0.53);
+	--light-glass: rgba(180, 180, 180, 0.7);
+	--header-glass: rgba(18, 18, 18, 0.7);
+	--padding-conteiner: clamp(1rem, -0.0563rem + 4.5070vw, 4rem);
+	--text-dark: #0e0e0e;
+	--text-light: #b4b4b4;
+	--chips: #1d1d1e;
+	--cards-background: #000103;
+	--footer-letters: #2c2c2c;
+	--white: #fff;
+	--chips-hover: #424344;
+	--error: #f9617d;
+  --font-family: "Manrope", sans-serif;
+  --second-family: "Inter", sans-serif;
+	--btn-linear-gradient: linear-gradient(90deg, #ff58a2 0%, #ca58ff 100%);
+}

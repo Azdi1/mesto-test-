@@ -11,61 +11,110 @@
     <link rel="stylesheet" href="./pages/index.css" />
   </head>
   <body class="page">
-    <div class="conteaner">
-      <div class="content__box">
-        <h2 class="content__title">Photography</h2>
-        <p class="paragraph">
-          Here is a collection of my best travel pictures that I took while
-          travelling places all around the world.
-        </p>
-      </div>
-      <ul class="list">
-        <li class="item">
-          <button type="button" class="btn active__btn theme-menu__button">
-            ITALY
-          </button>
-        </li>
-        <li class="item">
-          <button type="button" class="btn">AUSTRALIA</button>
-        </li>
-        <li class="item"><button type="button" class="btn">INDIA</button></li>
-        <li class="item"><button type="button" class="btn">BRAZIL</button></li>
-      </ul>
-      <div class="cards">
-        <ul class="items">
-          <li class="item">
-            <article class="card">
-              <img
-                id="ITALY"
-                class="img__card"
-                src="./images/card_1.jpg"
-                alt=""
-              />
-            </article>
+    <header class="header">
+      <img
+        src="./images/Logo.svg"
+        class="logo header__logo"
+        alt="Логотип проекта landing"
+      />
+      <nav class="header__menu">
+        <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+        <label class="burger" for="burger-checkbox"></label>
+        <ul class="header__menu-list">
+          <li class="header__menu-item">
+            <button class="button">Главная</button>
           </li>
-          <li class="item">
-            <article class="card">
-              <img class="img__card" src="./images/card_2.jpg" alt="" />
-            </article>
+          <li class="header__menu-item">
+            <button type="button" class="button">Для кого</button>
           </li>
-          <!-- <li class="item">
-            <article class="card">
-              <img class="img__card" src="./images/card_3.jpg" alt="" />
-            </article>
-          </li> -->
-          <li class="item">
-            <article class="card">
-              <img class="img__card" src="./images/card_4.jpg" alt="" />
-            </article>
+          <li class="header__menu-item">
+            <button type="button" class="button">Как это работает</button>
           </li>
-          <li class="item">
-            <article class="card">
-              <img class="img__card" src="./images/card_5.jpg" alt="" />
-            </article>
+          <li class="header__menu-item">
+            <button type="button" class="button">Функционал</button>
+          </li>
+          <li class="header__menu-item">
+            <button type="button" class="button">Связаться</button>
+          </li>
+          <li class="header__menu-item">
+            <button type="button" class="btn__linear">Попробовать</button>
           </li>
         </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="section section__header">
+        <h1 class="main__title">BurnPro — платформа для онлайн-интервью</h1>
+        <p class="subtitle text__large">
+          Оцените кандидата быстрее и объективнее с помощью настраиваемых этапов
+          собеседования, записи видеоинтервью и анализа эмоций
+        </p>
+        <button type="button" class="button btn__section">
+          Попробовать
+          <img class="arrow__btn" src="./images/arrow.svg" alt="arrow__btn" />
+        </button>
+        <div class="box__cards-bluer">
+        <div class="blur__cards-position-1">
+          <img
+            class="img__header-card-1"
+            src="./images/header-cards.svg"
+            alt=""
+          />
+          <span class="span__btn"
+            ><svg
+              width="32"
+              height="33"
+              viewBox="0 0 32 33"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M30 16.5985C30 24.3305 23.732 30.5985 16 30.5985C8.26801 30.5985 2 24.3305 2 16.5985C2 8.86652 8.26801 2.59851 16 2.59851C23.732 2.59851 30 8.86652 30 16.5985Z"
+                fill="#B4B4B4"
+              />
+              <path
+                d="M22.233 26.7785C21.663 26.7785 21.128 26.6685 20.628 26.4485C20.133 26.2235 19.7005 25.9085 19.3305 25.5035C18.9605 25.0985 18.683 24.6235 18.498 24.0785L20.118 23.4785C20.343 23.9585 20.658 24.3485 21.063 24.6485C21.473 24.9485 21.913 25.0985 22.383 25.0985C22.833 25.0985 23.2005 24.9835 23.4855 24.7535C23.7705 24.5235 23.913 24.1885 23.913 23.7485C23.913 23.4635 23.813 23.211 23.613 22.991C23.413 22.766 23.148 22.561 22.818 22.376C22.493 22.191 22.138 22.0135 21.753 21.8435C21.418 21.6985 21.0805 21.536 20.7405 21.356C20.4055 21.176 20.0955 20.9635 19.8105 20.7185C19.5305 20.4735 19.303 20.186 19.128 19.856C18.958 19.526 18.873 19.1385 18.873 18.6935C18.873 18.1885 19.0055 17.726 19.2705 17.306C19.5355 16.886 19.9105 16.551 20.3955 16.301C20.8805 16.046 21.453 15.9185 22.113 15.9185C22.903 15.9185 23.5805 16.131 24.1455 16.556C24.7155 16.981 25.093 17.5135 25.278 18.1535L23.673 18.6935C23.523 18.3835 23.308 18.1235 23.028 17.9135C22.748 17.7035 22.408 17.5985 22.008 17.5985C21.633 17.5985 21.3155 17.6935 21.0555 17.8835C20.8005 18.0735 20.673 18.3335 20.673 18.6635C20.673 18.8935 20.7455 19.0935 20.8905 19.2635C21.0405 19.4335 21.258 19.5985 21.543 19.7585C21.833 19.9185 22.188 20.0985 22.608 20.2985C22.948 20.4585 23.298 20.6385 23.658 20.8385C24.018 21.0335 24.353 21.261 24.663 21.521C24.978 21.781 25.2305 22.086 25.4205 22.436C25.6155 22.786 25.713 23.1935 25.713 23.6585C25.713 24.3235 25.5505 24.8885 25.2255 25.3535C24.9055 25.8185 24.4805 26.1735 23.9505 26.4185C23.4255 26.6585 22.853 26.7785 22.233 26.7785Z"
+                fill="#121212"
+              />
+              <path
+                d="M13.5755 26.7785C12.8205 26.7785 12.1505 26.5885 11.5655 26.2085C10.9855 25.8285 10.5405 25.2935 10.2305 24.6035L11.7605 23.8685C11.8955 24.1285 12.0455 24.3485 12.2105 24.5285C12.3805 24.7085 12.5755 24.846 12.7955 24.941C13.0205 25.036 13.2855 25.0835 13.5905 25.0835C13.8755 25.0835 14.148 25.026 14.408 24.911C14.673 24.791 14.888 24.576 15.053 24.266C15.218 23.956 15.3005 23.5135 15.3005 22.9385V16.0985H17.0705V23.0285C17.0705 23.7685 16.963 24.3835 16.748 24.8735C16.533 25.3585 16.253 25.741 15.908 26.021C15.563 26.296 15.1855 26.491 14.7755 26.606C14.3655 26.721 13.9655 26.7785 13.5755 26.7785Z"
+                fill="#121212"
+              />
+            </svg>
+          </span>
+        </div>
+        <div class="blur__cards-position-2">
+          <img
+            class="img__header-card-2"
+            src="./images/header-cards-2.svg"
+            alt=""
+          />
+          <div class="blur__cards-position-3">
+            <span class="text__cards-bluer text__card-position-1"
+              >Тест 85%</span
+            >
+            <span class="text__cards-bluer"
+              >Видео
+              <svg
+                width="17"
+                height="17"
+                viewBox="0 0 17 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.8654 1.65958C5.1854 1.65958 2.19873 4.64624 2.19873 8.32624C2.19873 12.0062 5.1854 14.9929 8.8654 14.9929C12.5454 14.9929 15.5321 12.0062 15.5321 8.32624C15.5321 4.64624 12.5454 1.65958 8.8654 1.65958ZM8.8654 13.6596C5.9254 13.6596 3.53206 11.2662 3.53206 8.32624C3.53206 5.38624 5.9254 2.99291 8.8654 2.99291C11.8054 2.99291 14.1987 5.38624 14.1987 8.32624C14.1987 11.2662 11.8054 13.6596 8.8654 13.6596ZM7.19873 11.3262L11.8654 8.32624L7.19873 5.32624V11.3262Z"
+                  fill="white"
+                />
+              </svg>
+            </span>
+            <span class="text__cards-bluer">Алгозадача 65%</span>
+            <span class="text__cards-bluer">Итог: 72%</span>
+          </div>
+        </div>
       </div>
-    </div>
+      </section>
+    </main>
     <script src="./scripts/index.js" defer></script>
   </body>
 </html>

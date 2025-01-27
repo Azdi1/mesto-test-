@@ -1,6 +1,24 @@
-@font-face {
-  font-family: 'Sen';
-  src: url("./fonts/Sen-Bold.woff2") format("woff2");
-  font-weight: 700;
+/* @font-face {
+  font-family: 'Manrope';
+  src: url("./fonts/Manrope.woff2") format("woff2");
+  font-weight: 500;
   font-style:  normal;
+} */
+
+@font-face {
+  font-family: Manrope;
+  src:
+    local('Manrope'),
+    url(./fonts/Manrope.woff2) format('woff2'),
+    format('woff2 supports variations'),
+    url(./fonts/Manrope.woff2) format('woff2-variations');
+  font-display: swap;
 }
+
+
+/* @font-face {
+  font-family: 'Inter';
+  src: url("./fonts/Inter.woff2") format("woff2");
+  font-weight: 500;
+  font-style:  normal;
+} */
